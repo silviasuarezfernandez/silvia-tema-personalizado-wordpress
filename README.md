@@ -1,0 +1,6 @@
+- Con archive-producto.php  muestro un listado de todos los productos. Con un encabezado del sitio, un contenedor principal de la página con el título ¨Productos¨. Muestra los productos en cuadrícula , la imagen destacada , el título y la descripción del producto. Usando ACF para el valor de los campos personalizados "precio" y "stock". Si no hay productos, muestra el mensaje:" no se han encontrado productos"
+- Con archive-servicios.php muestro como en el anterior un listado en este caso de servicios,los campos son:"precio" y "tiempo_de_realizacion".
+- Con category-noticias.php muestro las entradas de blog dentro de una categoría,usando funciones de worpress:título,imagen,autor,feha,extracto.
+- Con category.php se muestra cualquier categoría de entradas y muestra el nombre, la descripción  y las entradas publicadas en esa categoría. 
+- Con single-productos.php muestro una página individual de un producto con el título, la imagen destacada,la descripción y los campos:"precio" y "stock".
+-Con single-servicios.php igual que el anterior con los campos: "tiempo_de_realizacion" y " precio".
