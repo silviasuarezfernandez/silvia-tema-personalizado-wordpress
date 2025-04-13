@@ -1,0 +1,106 @@
+/*
+Theme Name: SILVIA TEMA
+Theme URI: http://wordpress.com
+Description: Este es mi primer tema 
+Author: SILVIA
+Version: 1.0
+*/
+
+/*  menú de navegación */
+.menu-principal {
+    display: flex;
+    justify-content: center; /* menú en el centro */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none; /* sin puntos de lista */
+}
+
+.menu-principal ul {
+    display: flex;
+    gap: 20px; /* espacio entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li {
+    margin: 0; /* sin márgenes innecesarios */
+}
+
+.menu-principal li:last-child {
+    margin-right: 0;
+}
+
+/* color del texto del menú */
+.menu-principal a:link,
+.menu-principal a:visited,
+.menu-principal a:active {
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* hover */
+.menu-principal a:hover {
+    color: yellow;
+}
+/* logotipo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /*  logotipo  centrado */
+    margin-bottom: 10px; /* espacio  */
+}
+
+.logo img {
+    max-width: 150px; /*  tamaño del logotipo */
+    height: auto;
+}
+
+/*  para móviles */
+@media (max-width: 768px) {
+    .menu-principal ul {
+        flex-direction: column; /* para apilar los elementos en móviles */
+        gap: 10px;
+    }
+
+    .logo img {
+        max-width: 120px; /* logotipo más pequeño para móviles */
+    }
+}
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.tarjeta-producto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: scale(1.03);
+}
+.campos-personalizados {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+.campos-personalizados p {
+    margin: 0.25rem 0;
+}
+
+
+
+
+
+
+
+
+
